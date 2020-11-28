@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
 	// переключение стандартного потока вывода в формат Юникода
-	_setmode(_fileno(stdout), _O_U16TEXT);
+	//_setmode(_fileno(stdout), _O_U16TEXT);
 
 	int var1;                     // описание переменной var1
 	int var2;                     // описание переменной var2
