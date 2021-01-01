@@ -14,13 +14,13 @@ int main()
     unsigned int array [SIZE]; //инициализация массива
     int interval = 0 + 100; //интервал для генерирумых случайных значений
 
-    for (int i = 0; i < SIZE; i++)
+    for (int i = 1; i < SIZE; i++)
     array[i] = rand()%interval;
     
     cout << setw(20) << "Original array: \n";
     show_array(array, SIZE);
 
-    for (int j = 0; j < SIZE-1; j++)
+    for (int j = 1; j < SIZE; j++)
     {
         if ( array[j] < array[j+1] )
 
@@ -47,7 +47,7 @@ void swap(int& arr1, int& arr2)
 
 void show_array(unsigned int arr[], unsigned int SIZE)
 {
-    for (int k = 0; k < SIZE-1; k++)
+    for (int k = 1; k < SIZE; k++)
     cout << setw(3) << arr[k] << ", ";
     cout << setw(3) << arr[SIZE-1] << "\n";
 }
