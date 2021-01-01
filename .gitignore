@@ -1,1 +1,4 @@
 tempCRF.cpp
+*.json
+*.exe
+.vscode
